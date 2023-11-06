@@ -1,11 +1,271 @@
 /* Add your CSS to this file */
+/* General Text Styles */
 body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    color: #333;
+    box-sizing: border-box;
+    
+}
+img{
+    width: 150px;
+    height: 150px;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    display: flex;
 }
+
+/*images*/
+
+
+
+
+
+
+
+
+/* Header Styles */
+header {
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    font-size: 18px;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+nav ul{
+  display:flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  align-items: stretch;
+  list-style: none;
+
+}
+
+header a {
+    color: #6b7280;
+}
+
+header a:hover {
+    color: #5A67D8;
+}
+
+/* Hero Overview Styles */
+.overview-hero{
+    background-color: #E2E8F0;
+}
+.overview-hero-text {
+    background-color: #E2E8F0;
+   
+}
+
+.overview-hero .container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #E2E8F0;
+    gap: 30px;
+    padding: 80px;
+  
+}
+
+.overview-hero-image img{
+    float: left;
+ max-width: 100%;
+ max-height: 100%;
+  width: 200px ;
+  height: 150px;
+  background-size: cover;
+  
+
+
+}
+
+/* Learn About Section Styles */
+/*.learn-about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px ;
+    
+}*/
+.learn-about .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px ;
+    
+}
+
+.learn-about h2 {
+    color: #48BB78;
+    font-size: 24px;
+}
+
+.learn-about .card {
+    border: 1px;
+    float: left;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    text-align: center;
+    
+}
+
+
+.learn-about .card h3 {
+    color: #48BB78;
+    font-size: 21px;
+}
+.learn-about .cards:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1 /3 ;
+}
+.learn-about .card img{
+    align-items: center;
+  object-fit: scale-down;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+/* COVID-19 Testing Section Styles */
+.testing {
+    background-color: #4A5568;
+    color: white;
+}
+
+.testing .container{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    height: auto;
+    align-items: center;
+    width: auto;
+    padding: 80px;
+}
+
+.testing a {
+    background-color: #48BB78;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.testing-description{
+    display: inline-block;
+}
+
+.cta{
+    text-align: right;
+}
+
+.cta .btn{
+    padding: 20px 30px 10px 30px;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Recent Stories Section Styles */
+
+.stories .container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.stories a {
+    color: #5A67D8;
+}
+
+.stories h2 {
+    color: #5A67D8;
+    /*font-size: 24px;*/
+}
+
+.stories .card {
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stories .card h3 {
+    color: #5A67D8;
+    font-size: 18px;
+    
+}
+.stories img{
+    float: left;
+    border-radius: 250px;
+  object-fit: scale-down;
+  background-size: contain;
+  max-height: 40%;
+  max-width: 25%;
+  padding: 20px;
+
+}
+
+.stories p {
+    gap: 10px;
+    text-align: left;
+}
+
+/*news letter section style*/
+
+.newsletter{
+    background-color: #48BB78;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    padding: 100px;
+
+}
+.newsletter .container{
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.newsletter .btn{
+    background-color: #5A67D8;
+
+}
+.newsletter .btn:hover{
+    background-color: #5ed85a;
+
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter #email{
+    width: 200px;
+    height: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4A5568;
+    color: #FFFFFF;
+}
+

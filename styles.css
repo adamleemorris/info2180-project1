@@ -95,54 +95,73 @@ header a:hover {
 
 }
 
-/* Learn About Section Styles */
-/*.learn-about {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px ;
-    
-}*/
-.learn-about .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px ;
+
+.learn-about { 
+    padding: 50px 0;
     
 }
-
-.learn-about h2 {
+.learn-about h2 { 
     color: #48BB78;
     font-size: 24px;
+    text-align: left;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.cards { 
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 25px;
+    width: auto;
+    height: auto;
+    margin-top: 70px;
+}
+.card {
+width: 200px;
+height: auto;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease-in-out;
+justify-content: space-between;
+border: 1px;
+
 }
 
-.learn-about .card {
-    border: 1px;
-    float: left;
-    border: 1px solid #E2E8F0;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
-    text-align: center;
+.card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    align-items: center;
+    object-fit: scale-down;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
     
 }
 
-
-.learn-about .card h3 {
+.card-body {
+     padding: 10px;
+     gap: 10px;
+} 
+     
+.card-body h3 {
     color: #48BB78;
     font-size: 21px;
+    margin-bottom: 20px;
 }
-.learn-about .cards:nth-child(1) {
-    grid-row: 1;
-    grid-column: 1 /3 ;
-}
-.learn-about .card img{
-    align-items: center;
-  object-fit: scale-down;
-  background-size: cover;
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
+.card-body p { 
+    font-size: 14px;
+    margin-bottom: 30px; }
 
-}
+    
+
+
 
 /* COVID-19 Testing Section Styles */
 .testing {
@@ -180,6 +199,12 @@ header a:hover {
     height: auto;
     text-align: center;
     border-radius: 10px;
+}
+
+.cta .btn:hover{
+    
+    background-color: #5ed85a;
+
 }
 
 /* Recent Stories Section Styles */
